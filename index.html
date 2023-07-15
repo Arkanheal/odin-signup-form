@@ -14,10 +14,50 @@
       <img src="./assets/odin-lined.png" alt="A rune-style white drawing of a bearded viking">
       ODIN
     </div>
-    <div class="image-credit">Photo by <a href="https://haliewestphotography.com/">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a></div>
-
+    <div class="image-credit">Photo by <a href="https://haliewestphotography.com/">Halie West</a> on <a
+        href="https://unsplash.com/">Unsplash</a></div>
   </aside>
-  <main>form</main>
+  <main>
+    <section id="title">
+      <div>
+        <p>This is not a real online service! You know you need something like this in your life to help
+          you realize your deepest dreams.<br>
+          Sign up <span class="italic">now</span> to get started.</p>
+        <p>You <span class="italic">know</span> you want to</p>
+      </div>
+    </section>
+    <section id="form">
+      <form action="https://www.example.com" method="POST">
+        <div class="form-inputs">
+          <h3> Let's do this! </h3>
+          <div class="input-wrapper">
+            <fieldset class="left-panel">
+              <label for="first-name">FIRST NAME</label>
+              <input id="first-name" type="text" name="first-name">
+              <label for="email">EMAIL</label>
+              <input id="email" type="email" name="email">
+              <label for="password">PASSWORD</label>
+              <input id="password" type="password" name="password" class="error">
+            </fieldset>
+            <fieldset class="right-panel">
+              <label for="last-name">LAST NAME</label>
+              <input id="last-name" type="text" name="last-name">
+              <label for="phone">PHONE NUMBER</label>
+              <input id="phone" type="text" name="phone" pattern="0[6-7]\d{8}">
+              <label for="confirm-password">CONFIRM PASSWORD</label>
+              <input id="confirm-password" type="password" name="confirm-password" class="error">
+            </fieldset>
+          </div>
+        </div>
+        <div class="button-div">
+        <button type="submit" class="submit-form">Create Account</button>
+        </div>
+      </form>
+      <div class="existing-user">
+        Already have an account? <a href="#">Log in</a>
+      </div>
+    </section>
+  </main>
 </body>
 
 </html>
